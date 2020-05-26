@@ -1,5 +1,14 @@
-a = input().encode("utf-8").hex()
-print(a)
-b = a.decode("utf-8").hex()
+a = input();
 
-print(b)
+a = ord(a)
+
+arr = []
+
+i = 97
+while i <= int(a):
+    alphabet = chr(i)
+    arr.append(alphabet)
+    i += 1
+
+for i in arr:
+    print(i, end=" ")    
